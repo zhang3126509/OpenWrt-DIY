@@ -95,3 +95,4 @@ git clone https://github.com/openwrt-dev/po2lmo.git
 pushd po2lmo
 make && sudo make install
 popd
+sed -i 's/192.168.1.1/192.168.1.10/g' package/base-files/files/bin/config_generate
